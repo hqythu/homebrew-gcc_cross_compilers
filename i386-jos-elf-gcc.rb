@@ -13,7 +13,7 @@ class I386JosElfGcc < Formula
   depends_on 'i386-jos-elf-binutils'
 
   def install
-    binutils = Formula.factory 'i386-jos-elf-binutils'
+    binutils = Formulary.factory 'i386-jos-elf-binutils'
 
     ENV['CC'] = '/usr/local/bin/gcc-4.9'
     ENV['CXX'] = '/usr/local/bin/g++-4.9'

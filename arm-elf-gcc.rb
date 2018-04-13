@@ -13,7 +13,7 @@ class ArmElfGcc < Formula
   depends_on 'arm-elf-binutils'
 
   def install
-    binutils = Formula.factory 'arm-elf-binutils'
+    binutils = Formulary.factory 'arm-elf-binutils'
 
     ENV['CC'] = '/usr/local/bin/gcc-4.9'
     ENV['CXX'] = '/usr/local/bin/g++-4.9'

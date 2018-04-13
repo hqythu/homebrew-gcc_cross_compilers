@@ -13,7 +13,7 @@ class X64ElfGcc < Formula
   depends_on 'x64-elf-binutils'
 
   def install
-    binutils = Formula.factory 'x64-elf-binutils'
+    binutils = Formulary.factory 'x64-elf-binutils'
 
     ENV['CC'] = '/usr/local/bin/gcc-4.9'
     ENV['CXX'] = '/usr/local/bin/g++-4.9'
